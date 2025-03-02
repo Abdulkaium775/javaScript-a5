@@ -2,6 +2,28 @@ document.getElementById('discover-container').addEventListener('click', function
     window.location.href = "main.html";
 })
 
+// document.getElementById('complete-button1').addEventListener('click',function(event){
+// event.preventDefault();
+// disableButton1();
+
+    
+// });
+
+// function disableButton1() {
+//     let btn1 = document.getElementById('btn1');
+//     let num1 = parseInt(btn1.innerText);
+
+//     let btn2 = document.getElementById('btn2');
+//     let num2 = parseInt(btn2.innerText);
+//     if (confirm("Success")) {
+//         document.getElementById('complete-button1').setAttribute("disabled",true);
+//         num1--;
+//         btn1.innerText = num1;
+//         num2++;
+//         btn2.innerText = num2;
+//     }
+// }
+
 
 document.getElementById('complete-button1').addEventListener('click', function () {
     alert ('Board Upated Successfully');
@@ -13,16 +35,21 @@ document.getElementById('complete-button1').addEventListener('click', function (
     let num2 = parseInt(btn2.innerText);
 
     // Correcting increment/decrement
-    btn1.innerText = num1 + 1;
-    btn2.innerText = num2 - 1;
+    btn1.innerText = num1 - 1;
+    btn2.innerText = num2 + 1;
+
 
     let text = document.getElementById('text');
     text.innerHTML =`
-      <p> You have completed the task Fix Mobile Button at ${new Date().toLocaleTimeString()} </p> 
+      <p> You have completed the task Fix Mobile Button at ${new Date().toLocaleTimeString()} </p>
         
  `
- this.disabled = true;
-});
+
+ document.getElementById('complete-button1').disabled = true;
+ });
+
+
+
 
 
 
@@ -37,8 +64,8 @@ document.getElementById('complete-button2').addEventListener('click', function (
     let num2 = parseInt(btn2.innerText);
 
     // Correcting increment/decrement
-    btn1.innerText = num1 + 1;
-    btn2.innerText = num2 - 1;
+    btn1.innerText = num1 - 1;
+    btn2.innerText = num2 + 1;
 
     let text = document.getElementById('text');
     text.innerHTML =`
@@ -46,7 +73,7 @@ document.getElementById('complete-button2').addEventListener('click', function (
      <p> You have completed the task Add Dark Mode at  ${new Date().toLocaleTimeString()} </p> 
         
  `
- this.disabled = true;
+ document.getElementById('complete-button1').disabled = true;
 });
 
 
@@ -59,8 +86,9 @@ document.getElementById('complete-button3').addEventListener('click', function (
     let num2 = parseInt(btn2.innerText);
 
     // Correcting increment/decrement
-    btn1.innerText = num1 + 1;
-    btn2.innerText = num2 - 1;
+    btn1.innerText = num1 - 1;
+    btn2.innerText = num2 + 1;
+
 
     let text = document.getElementById('text');
     text.innerHTML =`
@@ -70,9 +98,9 @@ document.getElementById('complete-button3').addEventListener('click', function (
         
  `
 
- this.disabled = true;
-});
-
+ document.getElementById('complete-button1').disabled = true;
+})
+;
 
 
 document.getElementById('complete-button4').addEventListener('click', function () {
@@ -85,8 +113,9 @@ document.getElementById('complete-button4').addEventListener('click', function (
     let num2 = parseInt(btn2.innerText);
 
     // Correcting increment/decrement
-    btn1.innerText = num1 + 1;
-    btn2.innerText = num2 - 1;
+    btn1.innerText = num1 - 1;
+    btn2.innerText = num2 + 1;
+
 
     let text = document.getElementById('text');
     text.innerHTML =`
@@ -97,7 +126,7 @@ document.getElementById('complete-button4').addEventListener('click', function (
         
  `
 
-    this.disabled = true;
+ document.getElementById('complete-button1').disabled = true;
 });
 
 
@@ -111,8 +140,9 @@ document.getElementById('complete-button5').addEventListener('click', function (
     let num2 = parseInt(btn2.innerText);
 
     // Correcting increment/decrement
-    btn1.innerText = num1 + 1;
-    btn2.innerText = num2 - 1;
+    btn1.innerText = num1 - 1;
+    btn2.innerText = num2 + 1;
+
 
     let text = document.getElementById('text');
     text.innerHTML =`
@@ -124,7 +154,7 @@ document.getElementById('complete-button5').addEventListener('click', function (
         
  `
 
- this.disabled = true;
+ document.getElementById('complete-button1').disabled = true;
 });
 
 
@@ -138,8 +168,8 @@ document.getElementById('complete-button6').addEventListener('click', function (
     let num2 = parseInt(btn2.innerText);
 
     // Correcting increment/decrement
-    btn1.innerText = num1 + 1;
-    btn2.innerText = num2 - 1;
+    btn1.innerText = num1 - 1;
+    btn2.innerText = num2 + 1;
 
     let text = document.getElementById('text');
     text.innerHTML =`
@@ -152,7 +182,7 @@ document.getElementById('complete-button6').addEventListener('click', function (
         
  `
 
- this.disabled = true;
+ document.getElementById('complete-button1').disabled = true;
 });
 
 
